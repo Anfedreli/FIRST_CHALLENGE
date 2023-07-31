@@ -1,0 +1,44 @@
+#crecimiento de los diferentes algorirmos
+
+##Constante
+print('Se definirá el crecimiento de la complejidad algoritmica acorde a la clase de algoritmo escogida')
+
+import math
+
+def constante(n):
+    """Simplemente definiremos el comportamiento de una cosntante n"""
+    print('El crecimiento algoritmico para la constante serà')
+    print(f'El valor de la constante es {n}')
+
+    return n
+
+def log_n (n):
+    l = math.log10(n)
+    print(f'El comportamiento del algoritmo con crecimiento log n es {l}')
+
+def n_log_n (n):
+    j = n*math.log10(n)
+    print(f'El comportamiento del algoritmo con crecimiento n log n es {j}')
+
+def n_2 (n):
+    exponen = n*n
+    print(f'El comportamiento del algoritmo con crecimiento n^2 es {exponen}')
+
+
+
+
+print('Las diferentes clases a evaluar son:\n1. clase A para un algoritmo con comportamiento constante\n2. clase B para un algoritmo con comportamiento O(log(n))\n3. clase C para un algoritmo con comportamiento O(n)\n4. clase D para un algoritmo con comportamiento O( nlog n)\n5. clase E para un algoritmo con comportamiento o(n^2)\n6. clase F para un algoritmo con comportamiento O(2^n)')
+
+metodo = int(input('DEFINA EL MÉTODO  EN EL CUAL QUIERE EVALUAR a n =   '))
+n = int(input('DEFINA EL VALOR DE n =  '))
+
+if metodo == 1:
+    constante(n)
+elif metodo == 2:
+    log_n(n)
+elif metodo == 3:
+    n_log_n(n)
+elif metodo == 4:
+    n_2(n)
+else:
+    print('OPCIÓN NO DISPONIBLE')
