@@ -1,0 +1,19 @@
+#..........Nombre y edades............$#
+#Preguntar y captar valores de edades#
+##Data sujeto 1 ##
+nombre_sujeto_1 = input ('digite el nombre del sujeto 1:  ')
+edad_1 = int (input('Digite la edad del sujeto 1:  '))
+
+##Data sujeto 1 ##
+nombre_sujeto_2 = input ('digite el nombre del sujeto 2:  ')
+edad_sujeto_2 = int(input('Digite la edad del sujeto 2:  '))
+
+###Determinar qué individuo es mayor###
+
+if edad_1 > edad_sujeto_2:
+    print( ' El/la señor (a)', nombre_sujeto_1 , ' Es mayor que el/la señor (a)', nombre_sujeto_2)
+    print('Por eso es irrevocalble el hecho de que ANDRES AMA MÁS A FER')
+elif edad_1 > edad_1:
+    print( ' El/la señor (a)', nombre_sujeto_2 , ' Es mayor que el/la señor (a)', nombre_sujeto_1)
+else:
+    print(' El/la señor (a)', nombre_sujeto_2 , ' tiene la misma edad que el/la señor (a)', nombre_sujeto_1)
